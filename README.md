@@ -1,6 +1,7 @@
 # HackerNews Clone - GraphQL Frontend
 
-This is a HackerNews clone built with React, Apollo, GraphQL. For the backend, see [this repo]().
+This is a HackerNews clone built with React, Apollo, GraphQL. 
+For the backend, see [this repo](https://github.com/thegeorgenikhil/hackernews-go-graphql).
 
 ## Getting Started
 
