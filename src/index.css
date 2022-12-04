@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  background-color: #f6f6ef;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-container {
+  background-color: #f46528;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  color: #f6f6ef;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: #f6f6ef;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.feed-container {
+  max-width: 70rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.sidebar-container {
+  max-width: 20rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.link-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.link-content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.link-id {
+  font-size: 0.8rem;
+  color: #1e1e1e;
+  padding-top: 8px;
+}
+
+.link-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.link-url {
+  font-style: italic;
+}
+
+.link-author {
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 500;
+}
+
+.form-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container h1 {
+  text-align: center;
+}
+
+.form-container button {
+  background-color: #f46528;
+  color: #f6f6ef;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.alternate-auth-text {
+  text-align: center;
+  color: #1e1e1e;
+  font-size: 0.9rem;
+}
+
+.highlight-text-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.highlight-text-link:hover {
+  text-decoration: underline;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.input-group input {
+  padding: 0.5rem;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.input-group button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #f46528;
+  color: #f6f6ef;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* less than 800 px */
+@media screen and (max-width: 800px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+
+  .link-content {
+    flex-wrap: wrap;
+  }
+}
