@@ -29,6 +29,7 @@ export const PostPanel: React.FC<PostPanelPropType> = ({ setRefreshFeed }) => {
     e.preventDefault();
     const res = await postLink({ variables: { input: formData } });
     if (res.data) {
+      // using the setRefreshFeed function to update the feed
       setRefreshFeed((prev) => !prev);
       setFormData({
         title: "",
