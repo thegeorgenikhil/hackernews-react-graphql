@@ -15,7 +15,7 @@ git clone https://github.com/thegeorgenikhil/hackernews-apollo-graphql
 
 ```bash
 cd hackernews-apollo-graphql
-yarn add
+yarn
 ```
 
 3. Create a .env file in the root directory and add the following
